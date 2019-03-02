@@ -1,0 +1,45 @@
+body,main {
+    font-family: 'Roboto', sans-serif;
+    background: #FAFAFA;
+    color: #0277BD;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
+}
+.header {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 3.75em;
+    font-weight: 600;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.center div + div {
+    margin-left: 30px;
+}
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-cropper span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.rounded {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
