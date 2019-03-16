@@ -7,6 +7,18 @@
         <link href="transitions.css" rel="stylesheet">
         <link rel="icon" href="icon.png">
         <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"/>
+        <script>
+            document.addEventListener("click", (e) => {
+                let i = document.createElement("IMG");
+                i.src = "paw.svg"
+                i.style.fill = "#0277BD";
+                i.style.height = "5%"
+                i.style.position = "absolute";
+                i.style.left = e.clientX - ((0.05*window.screen.height)/4) + "px";
+                i.style.top = e.clientY - ((0.05*window.screen.height)/4) + "px";
+                document.getElementsByTagName("PAWS")[0].appendChild(i);
+            }, false);
+        </script>
     </head>
     <body>
         <main class="slide-up-fade-in">
@@ -32,5 +44,6 @@
                 <a target="_blank" href="https://github.com/sandpipes"><i class="fab fa-github"></i></a>
             </div>
         </extra>
+        <paws></paws>
     </body>
 </html>
